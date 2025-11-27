@@ -1,0 +1,14 @@
+FROM node:24.0.2
+
+WORKDIR /usr/src/app
+
+COPY package.json /usr/src/app/package.json
+COPY yarn.lock /usr/src/app/yarn.lock
+
+RUN yarn install
+
+COPY . /usr/src/app
+
+RUN yarn run build
+
+CMD ["yarn", "run", "start:dev"]
