@@ -50,6 +50,7 @@ $ yarn run test:cov
 - **GET** [/tables/:id] *Récupère une table par rapport à son id*
 - **POST** [/tables/:id/join] *Permet de rejoindre une table spécifique*
 - **DELETE** [/tables/leave] *Permet de quitter toute les tables*
+- **GET** [/tables/:id/game] *Permet d'avoir le status d'une partie via son id*
 - **GET** [/tables/:id/game/start] *Permet de lancer la partie*
 - **GET** [/tables/:id/game/:action] *Permet de faire une action dans la partie*
   <br><br>
