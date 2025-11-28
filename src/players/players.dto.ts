@@ -1,5 +1,5 @@
-import { ApiProperty } from '@nestjs/swagger';
-import { IsNumber, IsString, Length } from '@nestjs/class-validator';
+import { ApiProperty } from "@nestjs/swagger";
+import { IsArray, IsNumber, IsString, Length } from "@nestjs/class-validator";
 
 export class PlayersDto {
   @ApiProperty()
@@ -17,4 +17,8 @@ export class PlayersDto {
   @ApiProperty({ default: 1000 })
   @IsNumber()
   balance: number;
+
+  @ApiProperty()
+  @IsArray()
+  deck: [];
 }
